@@ -1,0 +1,20 @@
+{
+  "name": "p1-chat",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "serve:static": "npx http-server -p 5500 -c-1 .",
+    "start:remote": "node server/remote.js",
+    "start:ext-a": "PORT=8081 node server/remote.js",
+    "start:ext-b": "PORT=8082 node server/remote.js",
+    "start:ext-c": "PORT=8083 node server/remote.js",
+    "proxy": "node api-proxy.js",
+    "serve": "npx http-server . -p 5500 -c-1",
+    "cli": "node cli.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2"
+  }
+}
