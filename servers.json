@@ -1,0 +1,27 @@
+[
+  {
+    "id": "fs",
+    "label": "Filesystem (MCP, stdio)",
+    "transport": "stdio",
+    "cmd": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+  },
+  {
+    "id": "git",
+    "label": "Git (MCP, stdio, PyPI)",
+    "transport": "stdio",
+    "cmd": "python3",
+    "args": ["-m", "mcp_server_git", "--repository", "/Users/andyfer004/Documents/Desktop/P1-Redes"]
+  },
+  {
+    "id": "remote-http",
+    "label": "Remote (HTTP via Tunnel 4000)",
+    "transport": "http",
+    "url": "https://metal-suits-clap.loca.lt"
+  },
+  { "id": "mio-local-http",
+    "label": "Mi MCP Local (HTTP)", 
+    "transport": "http", 
+    "url": "http://127.0.0.1:3001" }
+
+]
